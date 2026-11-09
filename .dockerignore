@@ -1,0 +1,17 @@
+# Nunca levar credenciais locais para dentro da imagem
+src/main/resources/application-local.properties
+.env
+*.env
+
+# Arquivos desnecessários para o build
+target/
+.git
+.github
+.gitignore
+.vscode/
+.idea/
+*.md
+*.log
+HELP.md
+Dockerfile
+.dockerignore

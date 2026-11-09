@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "name": "api.version",
+      "type": "java.lang.String",
+      "description": "Versão da API usada no prefixo das rotas (/api/{versão}/...).",
+      "defaultValue": "v1"
+    }
+  ]
+}

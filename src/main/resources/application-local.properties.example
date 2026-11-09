@@ -1,3 +1,5 @@
+# Copie este arquivo para application-local.properties e preencha a senha.
+# O application-local.properties está no .gitignore e NUNCA vai para o GitHub.
 spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=saneia;encrypt=true;trustServerCertificate=true
 spring.datasource.username=sa
 spring.datasource.password=SUA_SENHA_AQUI
