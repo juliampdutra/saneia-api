@@ -1,0 +1,4 @@
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=saneia;encrypt=true;trustServerCertificate=true
+spring.datasource.username=sa
+spring.datasource.password=SUA_SENHA_AQUI
+spring.jpa.show-sql=true
