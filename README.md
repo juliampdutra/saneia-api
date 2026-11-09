@@ -432,3 +432,33 @@ curl -i https://saneia-api.jollyriver-13694d44.brazilsouth.azurecontainerapps.io
 - `application-local.properties` (uso local) está no `.gitignore` e no `.dockerignore`.
 - Credenciais do Docker Hub ficam em **GitHub Secrets**; a senha do banco fica como **secret do Azure Container App**.
 - Respostas de erro nunca expõem stack trace (`spring.web.error.include-stacktrace=never` + handler global com mensagem neutra no 500).
+
+---
+
+## 12. Evidências
+
+Capturas de tela que comprovam cada critério (pasta [`docs/evidencias`](docs/evidencias)).
+
+### Azure + SQL Server
+
+| Evidência | Captura |
+|---|---|
+| API publicada no Azure (Swagger via HTTPS) | ![Swagger no Azure](docs/evidencias/02-azure-swagger.png) |
+| Container App em execução (Azure Container Apps) | ![Container App - visão geral](docs/evidencias/04-azure-containerapp-visao-geral.png) |
+| Container executando a imagem do Docker Hub | ![Imagem do container](docs/evidencias/05-azure-containerapp-imagem.png) |
+| Conexão com o SQL Server por variáveis de ambiente (senha como secret) | ![Variáveis de ambiente](docs/evidencias/06-azure-variaveis-ambiente.png) |
+| Dados persistidos no Azure SQL Database | ![Persistência no Azure SQL](docs/evidencias/07-azure-sql-persistencia.png) |
+| 33 testes (CRUD, status HTTP e regras) executados contra a API no Azure | ![33 testes OK no Azure](docs/evidencias/03-azure-testes-33-ok.png) |
+
+### Docker Hub
+
+| Evidência | Captura |
+|---|---|
+| Imagem publicada com tags `latest` e SHA do commit (linux/amd64) | ![Tags no Docker Hub](docs/evidencias/09-dockerhub-tags.png) |
+
+### GitHub Actions
+
+| Evidência | Captura |
+|---|---|
+| Execuções automáticas por push na `main`, incluindo execução após alteração no repositório | ![Execuções do workflow](docs/evidencias/08-actions-execucoes.png) |
+| Etapas do job: Maven, login com secrets e build/push da imagem | ![Etapas do workflow](docs/evidencias/01-actions-etapas.png) |
