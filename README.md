@@ -13,6 +13,8 @@ API REST do **Saneia** — Global Solution 2026 (FIAP, turma 3SIR) — disciplin
 | Docker Hub | https://hub.docker.com/r/juliampdutra/saneia-api |
 | GitHub Actions | https://github.com/juliampdutra/saneia-api/actions |
 
+| Vídeo de apresentação | https://youtu.be/h9_t4r6XUkk |
+
 ---
 
 ## 1. Objetivo da solução
